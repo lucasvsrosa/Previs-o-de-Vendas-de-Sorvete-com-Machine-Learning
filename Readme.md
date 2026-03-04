@@ -43,29 +43,41 @@ Foi utilizada geração de dados sintéticos para simular cenários reais de ven
 
 Foi utilizado um modelo de **Regressão Linear**, pois o problema é de regressão supervisionada (previsão de valor numérico).
 
-### Etapas realizadas:
+---
 
-1. Carregamento dos dados
-2. Separação entre treino e teste
-3. Treinamento do modelo
-4. Avaliação com MSE (Mean Squared Error)
-5. Registro do experimento com MLflow
+## 📈 Métricas do Modelo
+
+- **R² Score:** `0.89`  
+  O modelo explica **89% da variabilidade das vendas**.
+
+- **MSE:** `2001.98`
 
 ---
 
-## 📈 Métricas
+## 🔍 Principais Insights
 
-* **MSE (Mean Squared Error)** → Avalia o erro médio quadrático das previsões.
-* Quanto menor o MSE, melhor o desempenho do modelo.
+### 📌 Correlação Direta
+Existe uma forte relação linear positiva entre temperatura e vendas.  
+**Quanto maior a temperatura, maior o volume de vendas.**
+
+### 🌡️ Ponto de Equilíbrio
+O modelo permite prever com precisão a necessidade de estoque para dias de calor intenso (**acima de 30°C**).
+
+### 📦 Otimização Operacional
+Com a previsão de demanda, é possível:
+
+- Reduzir desperdício em dias frios  
+- Evitar falta de produto em dias quentes  
+- Melhorar o planejamento de estoque  
 
 ---
 
-## 🔎 Insights Obtidos
+## 🚀 Como Executar
 
-📌 Existe forte correlação positiva entre temperatura e vendas.
-📌 Em dias mais quentes, a demanda aumenta significativamente.
-📌 O modelo conseguiu capturar bem essa tendência linear.
-📌 Pequenas variações podem ocorrer devido a ruídos simulados nos dados.
+### 1️⃣ Instalar as dependências
+
+```bash
+pip install -r requirements.txt
 
 ---
 

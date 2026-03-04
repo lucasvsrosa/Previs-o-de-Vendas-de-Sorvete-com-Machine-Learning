@@ -74,7 +74,7 @@ Foi utilizado um modelo de **Regressão Linear**, pois o problema é de regress�
 ### 1️⃣ Clonar o repositório
 
 ```bash
-git clone <seu_link_do_repositorio>
+git clone https://github.com/lucasvsrosa/Previs-o-de-Vendas-de-Sorvete-com-Machine-Learning/edit/main/Readme.md
 cd gelato-magico-ml
 ```
 
